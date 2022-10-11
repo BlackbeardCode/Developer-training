@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- NAVIGATOR -->
-    <nav class="nav">
+    <nav>
       <div class="logo-container">
         <img class="logo" src="image/logo.png" alt="logo" />
       </div>
@@ -29,21 +29,21 @@
       </div>
       <div class="sign-container">
         <span class="divider"></span>
-        <button type="button" class="openUser">
-          <i class="fa fa-user-o" aria-hidden="true"></i>
-        </button>
-        <button type="button" class="openSetup"
+        <a href="#" class="openUser"
+          ><i class="fa fa-user-o" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="openSetup"
           ><i class="fa fa-cog" aria-hidden="true"></i
-        ></button>
-        <button type="button" id="button" onclick="openExample()">click</button>
+        ></a>
       </div>
     </nav>
 
     <!-- SIDENAV -->
     <div class="sidenav hidden">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      <a href="javascript:void(0)" class="closebtn""
         >&times;</a
       >
+      <h5>Inserisci i tuoi dati</h5>
       <form action="" method="post">
         <label for="username">username</label>
         <input
@@ -68,7 +68,7 @@
 
     <!-- SIDENAV SETUP -->
     <div class="sidenav_setup hidden">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNavSetup()"
+      <a href="javascript:void(0)" class="closebtn"
         >&times;</a
       >
       <a href="#">profilo</a>
@@ -80,7 +80,7 @@
     <!-- section header -->
     <section id="header">
       <h1 style="color: white">Learn to code with us</h1>
-      <h2>Become a Web Developer superfast</h2>
+      <h4>Become a Web Developer superfast</h4>
       <div class="col-3">
         <div class="card">
           <h3>HTML</h3>
@@ -143,7 +143,7 @@
         <h1>Aggiungi il stile che preferisci</h1>
         <div class="col-1">
           <div class="card-dpurple">
-            <h2>Cascadian Style System</h2>
+            <h4>Cascadian Style System</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               voluptatem quae ullam atque ipsam fugiat sunt saepe dicta. Placeat
@@ -246,9 +246,9 @@
     <!-- FOOTER -->
     <footer>
       <div class="col-1 footer">
-        <h2>Footer</h2>
+        <h4>Footer</h4>
       </div>
     </footer>
-    <script src="main.js" /></script>
+    <script src="main.js"></script>
   </body>
 </html>
