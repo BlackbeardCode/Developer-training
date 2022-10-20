@@ -13,8 +13,8 @@
 0.512rem/8.19px	
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 :root {
   --primary: #f7b226;
   --primary-dark: #5e5108;
@@ -37,8 +37,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: 'Roboto Condensed', sans-serif;
+body {
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   color: var(--primary);
   line-height: 1.5;
@@ -46,7 +46,7 @@ html {
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 48px;
   font-weight: 700;
   letter-spacing: -2px;
@@ -103,7 +103,7 @@ li {
 nav {
   position: absolute;
   top: 0;
-  padding: 22px;
+  padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,8 +218,8 @@ nav a:active {
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition-duration: 200ms ease-out;
-  transition-property: all;
+  filter: blur(5px);
+  transition: all 200ms ease-out;
 }
 
 .login-btn {
@@ -352,6 +352,12 @@ section {
 
 .card-dpurple p {
   color: var(--primary-dark);
+}
+
+pre {
+  align-self: flex-start;
+  padding: 10px;
+  margin: 0;
 }
 
 .btn {
